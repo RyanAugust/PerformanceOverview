@@ -1,0 +1,11 @@
+name: performanceoverview
+dependencies:
+  - python=3.10
+  - pip
+  - flask
+  - Flask-SQLAlchemy
+  - matplotlib
+  - numpy
+  # - pip:
+    # - git+https://github.com/RyanAugust/banister.git
+    # - git+https://github.com/RyanAugust/PerformanceModel.git

@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    font-family: "Ubuntu Mono";
+    background-color: lightgrey;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}

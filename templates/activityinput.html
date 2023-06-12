@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>PMO</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Input New Activity</h1>
+
+    <div class="form">
+        <form action="/activityinput" method="POST">
+            <label for="activity_date">Activity Date</label>
+            <input type="date" name="activity_date" id="activity_date"><br>
+            <label for="activity_duration">Activity Duration (min)</label>
+            <input type="number" name="activity_duration" id="activity_duration"><br>
+            <label for="activity_load">Activity Load Metric</label>
+            <input type="number" name="activity_load" id="activity_load"><br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</div>
+{% endblock %}
