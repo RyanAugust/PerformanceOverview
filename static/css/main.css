@@ -1,10 +1,61 @@
+/* ~~DESIGN~~  
+color pallete: https://colorhunt.co/palette/7286d38ea7e9e5e0fffff2f2
+*/
+
+
 body, html {
     margin: 0;
-    font-family: "Ubuntu Mono";
-    background-color: lightgrey;
+    font-family: JetBrains Mono;
+    font: JetBrains Mono;
+    background-color: #FFF2F2;
 }
 
+/* center box thingty  */
 .content {
     margin: 0 auto;
-    width: 400px;
+    width: 800px;
+    height: 500px;
+    /* background-color: #8EA7E9;
+    border-radius: 10% 5%;
+    box-shadow: 5px 5px 5px #E5E0FF; */
+}
+
+.header {
+    background-color: #7286D3;
+    border-radius: 40% 25%;
+    box-shadow: 5px 5px 5px #E5E0FF;
+}
+.content h1 {
+    font-family: JetBrains Mono;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center; /* so worthless */
+}
+
+/* Table crap */
+.content table {
+    width:60%; 
+    margin-left:20%; /* this is honestly the stupidest scripting language */
+    margin-right:20%;
+    padding: 10px;
+    background-color: darkslategray;
+}
+tr:first-child {
+    background-color: black;
+    color: white; /* again how dumb is it that these names don't include color. This ACUTALLY the standard for this language... insane */
+}
+tr:nth-child(2n+3) {
+    background: #CCC
+}
+tr:nth-child(2n+2) {
+    background: #FFF
+}
+
+/* Activity input things...  */
+.content form {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
 }

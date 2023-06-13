@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/topnav.css') }}">
+    <div class="topnav">
+        <a href="/" class="active">PMO</a>
+        <div id="site_links">
+            <a href="/modeling">Modeling</a>
+            <a href="/activities">Activities</a>
+            <a href="/activityinput">Activity Input</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="display_fxn()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function display_fxn() {
+              var x = document.getElementById("site_links");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+      </div>
     {% block head %}{% endblock %}
 </head>
 <body>

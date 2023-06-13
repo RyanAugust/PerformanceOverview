@@ -6,10 +6,11 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Input New Activity</h1>
-
+    <div class="header">
+        <h1>Input New Activity</h1>
+    </div>
     <div class="form">
-        <form action="/activityinput" method="POST">
+        <form action="/activityinput/activity" method="POST">
             <label for="activity_date">Activity Date</label>
             <input type="date" name="activity_date" id="activity_date"><br>
             <label for="activity_duration">Activity Duration (min)</label>
@@ -19,5 +20,15 @@
             <input type="submit" value="Upload">
         </form>
     </div>
+    <div class="header">
+        <h1>Input Activity File</h1>
+    </div>
+        Assumed headers are: activity_datetime,activity_duration,activity_load
+        <form method="POST" action="/activityinput/activitycsv" enctype="multipart/form-data">
+            <input type="file" name="file"><br>
+            <input type="submit" value="Submit">
+        </form>
+  </body>
+</html>
 </div>
 {% endblock %}

@@ -6,21 +6,22 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Performance Management & Overview</h1>
-
+    <div class="header">
+        <h1 style="text-align: center">Loaded Activities</h1>
+    </div>
     {% if activities|length < 1 %}
     <h4 style="text-align: center">There are no activites. Add one <a href="/activityinput/">here</a></h4>
     {% else %}
 
-    <table>
+    <table class="center">
         <tr>
             <th>Date</th>
             <th>Duration</th>
             <th>Load</th>
         </tr>
-        {% for activitie in activities %}
+        {% for activity in activities %}
             <tr>
-                <td>{{ activity.activity_date.date() }}</td>
+                <td>{{ activity.activity_datetime.date() }}</td>
                 <td>{{ activity.activity_duration }}</td>
                 <td>{{ activity.activity_load }}</td>
             </tr>
