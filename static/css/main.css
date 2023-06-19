@@ -5,8 +5,9 @@ color pallete: https://colorhunt.co/palette/7286d38ea7e9e5e0fffff2f2
 
 body, html {
     margin: 0;
-    font-family: JetBrains Mono;
-    font: JetBrains Mono;
+    font-family: JetBrains Mono,Menlo;
+    font: JetBrains Mono,Menlo;
+    font-size: 12px;
     background-color: #FFF2F2;
 }
 
@@ -22,14 +23,14 @@ body, html {
 
 .header {
     background-color: #7286D3;
-    border-radius: 40% 25%;
+    border-radius: 40% 16%;
     box-shadow: 5px 5px 5px #E5E0FF;
 }
 .content h1 {
-    font-family: JetBrains Mono;
+    font-family: JetBrains Mono,Menlo;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     padding: 20px;
     text-align: center; /* so worthless */
 }
