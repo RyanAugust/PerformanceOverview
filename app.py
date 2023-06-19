@@ -31,9 +31,12 @@ def modeling_load():
 
 @app.route("/activities", methods=['GET'])
 def activities():
-    activities = activity_store.query.order_by(activity_store.activity_datetime).all()
-    return render_template('activities.html', activities=activities)
-
+    try:
+        activities = activity_store.query.order_by(activity_store.activity_datetime).all()
+        return render_template('activities.html', activities=activities)
+    except:
+        return render_template('activities.html', activities=[])
+    
 @app.route("/plot")
 def plot():
     # Generate some data

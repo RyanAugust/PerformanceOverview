@@ -1,7 +1,7 @@
-numpy
 flask
 Flask-SQLAlchemy
 matplotlib
+numpy
 # Add each model repo as needed 
 # git+https://github.com/RyanAugust/banister.git
 # git+https://github.com/RyanAugust/PerformanceModel.git
