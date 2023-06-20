@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime
 
+import model_handling
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///internal.db'
 app.config['UPLOAD_FOLDER'] = 'activity_uploads'
